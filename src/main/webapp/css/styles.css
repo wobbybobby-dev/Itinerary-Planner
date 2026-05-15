@@ -1,0 +1,245 @@
+/* File: public/css/style.css */
+:root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --danger-color: #f56565;
+    --success-color: #48bb78;
+    --warning-color: #ed8936;
+    --light-bg: #f8f9fa;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+    --border-color: #e2e8f0;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+ 
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+ 
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+ 
+.card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+ 
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+ 
+.badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 0.8rem;
+}
+ 
+.badge-success {
+    background-color: var(--success-color);
+}
+ 
+.badge-warning {
+    background-color: var(--warning-color);
+}
+ 
+.badge-danger {
+    background-color: var(--danger-color);
+}
+ 
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+ 
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+ 
+.btn-primary:hover {
+    background-color: #5568d3;
+    transform: translateY(-2px);
+}
+ 
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+ 
+.btn-success {
+    background-color: var(--success-color);
+    color: white;
+}
+ 
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+ 
+.btn-warning {
+    background-color: var(--warning-color);
+    color: white;
+}
+ 
+.btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 12px;
+}
+ 
+.form-group {
+    margin-bottom: 1.5rem;
+}
+ 
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+ 
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+}
+ 
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+ 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+ 
+.trip-card {
+    border-left: 5px solid var(--primary-color);
+}
+ 
+.activity-card {
+    border-left: 5px solid var(--secondary-color);
+}
+ 
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+ 
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+ 
+.stat-label {
+    color: var(--text-light);
+    font-size: 14px;
+}
+ 
+.alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+ 
+.alert-info {
+    background-color: #bee3f8;
+    color: #2c5282;
+    border: 1px solid #90cdf4;
+}
+ 
+.alert-success {
+    background-color: #c6f6d5;
+    color: #22543d;
+    border: 1px solid #9ae6b4;
+}
+ 
+.alert-danger {
+    background-color: #fed7d7;
+    color: #742a2a;
+    border: 1px solid #fc8181;
+}
+ 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+ 
+.table th {
+    background-color: var(--light-bg);
+    padding: 1rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid var(--border-color);
+}
+ 
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+ 
+.table tr:hover {
+    background-color: var(--light-bg);
+}

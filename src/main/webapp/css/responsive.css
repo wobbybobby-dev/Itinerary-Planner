@@ -1,0 +1,204 @@
+/* File: src/main/webapp/css/responsive.css */
+
+ 
+/* Responsive Design Utilities */
+ 
+/* Mobile First - Extra Small devices (up to 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+ 
+    .navbar-brand {
+        font-size: 18px !important;
+    }
+ 
+    .card {
+        margin-bottom: 15px;
+        border-radius: 0 !important;
+    }
+ 
+    .btn {
+        padding: 0.4rem 0.6rem;
+        font-size: 12px;
+    }
+ 
+    .form-control,
+    .form-select {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+ 
+    h1 {
+        font-size: 24px;
+    }
+ 
+    h2 {
+        font-size: 20px;
+    }
+ 
+    h3 {
+        font-size: 18px;
+    }
+ 
+    .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+ 
+    .col-md-6,
+    .col-md-4,
+    .col-md-3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+ 
+    .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+ 
+    .table {
+        font-size: 12px;
+    }
+ 
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+ 
+    .badge {
+        padding: 0.3rem 0.5rem;
+        font-size: 11px;
+    }
+}
+ 
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+ 
+    .col-sm-4 {
+        width: 33.333%;
+    }
+}
+ 
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+        display: inline-block;
+    }
+ 
+    .col-md-4 {
+        width: 33.333%;
+        display: inline-block;
+    }
+ 
+    .col-md-3 {
+        width: 25%;
+        display: inline-block;
+    }
+ 
+    .col-md-8 {
+        width: 66.666%;
+        margin: 0 auto;
+    }
+ 
+    .form-control,
+    .form-select {
+        padding: 0.6rem;
+        font-size: 15px;
+    }
+ 
+    .table {
+        font-size: 13px;
+    }
+ 
+    .d-flex.gap-2 {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+ 
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+ 
+    .col-lg-6 {
+        width: 50%;
+    }
+ 
+    .col-lg-4 {
+        width: 33.333%;
+    }
+ 
+    .col-lg-3 {
+        width: 25%;
+    }
+ 
+    h1 {
+        font-size: 32px;
+    }
+ 
+    h2 {
+        font-size: 28px;
+    }
+ 
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+ 
+/* Extra Large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container-lg {
+        max-width: 1400px;
+    }
+ 
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+ 
+/* Print Styles */
+@media print {
+    .navbar,
+    .btn,
+    form {
+        display: none;
+    }
+ 
+    .card {
+        page-break-inside: avoid;
+    }
+ 
+    body {
+        background: white;
+    }
+}
+ 
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #ffffff;
+    }
+ 
+    body.dark-mode {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+ 
+    body.dark-mode .card {
+        background-color: #2d2d2d;
+        color: var(--text-color);
+    }
+}
+ 
